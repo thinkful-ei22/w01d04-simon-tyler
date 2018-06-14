@@ -31,7 +31,7 @@ const handleSubmit = function(){
     event.preventDefault();
     const userInput = $('#number-choice').val();
     //console.log(userInput);
-  $('#number-choice').val('');
+    $('#number-choice').val('');
     //take user input and evaluate that to Fizz, Buzz....
     const fizzBuzzItems = [];
     for (let i = 1; i <= userInput; i++)
