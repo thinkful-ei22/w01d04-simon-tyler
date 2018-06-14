@@ -1,4 +1,5 @@
 'use strict';
+/*eslint-env jquery*/
 
 const addItemToHTML = function(submitFood) {
   return `<li>
@@ -38,8 +39,6 @@ const deleteItem = function() {
     $(this).closest('li').remove();
   });
 };
-
-
 
 function main() {
   submitFunction();

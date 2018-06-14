@@ -1,4 +1,5 @@
 'use strict';
+/*eslint-env jquery*/
 //function that evaluates to fizz, buzz, fizzbuzz, num
 const fizzBuzz = function(num){
   if (num % 15 === 0){
