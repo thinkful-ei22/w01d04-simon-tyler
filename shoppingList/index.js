@@ -1,6 +1,10 @@
 'use strict';
 /*eslint-env jquery*/
 
+const userInput = $('.js-shopping-list-entry');
+
+console.log(userInput);
+
 const addItemToHTML = function(submitFood) {
   return `<li>
   <span class="shopping-item">${submitFood}</span>
@@ -22,9 +26,9 @@ const addUserInput = function(foodItem) {
 const submitFunction = function() {
   $('#js-shopping-list-form').submit(function(event) {
     event.preventDefault();
-    const userInput = $('.js-shopping-list-entry').val();
-    let addedHtml = addUserInput(userInput);
+    const addedHtml = addUserInput(userInput.val());
     $('ul').append(addedHtml);
+    userInput.val('');
   });
 };
 
